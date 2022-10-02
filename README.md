@@ -1,6 +1,6 @@
 # Projeto Delivery App
 
--- Para que consiga acessar este projeto em seu computador, é necessário ter o banco de dados MySQL.
+-- Para que consiga acessar este projeto em seu computador, é necessário ter o banco de dados MySQL ou Docker.
 
 Projeto de conclusão do bloco de Back-end da [Trybe](https://www.betrybe.com). Trabalho realizado em grupo de 5 estudantes.
 O grupo foi responsável por criar e integrar tanto o back-end quanto o front-end, criando uma plataforma de delivery de cerveja.
@@ -51,7 +51,7 @@ O grupo foi responsável por criar e integrar tanto o back-end quanto o front-en
 Clone o projeto
 
 ```bash
-  git clone git@github.com:analuisams99/project-delivery-app.git
+  git clone git@github.com:RaphaelTaglialegna/project-delivery-app.git
 ```
 
 Entre no diretório do projeto e abra ele no seu VSCode
@@ -61,9 +61,10 @@ Entre no diretório do projeto e abra ele no seu VSCode
   code .
 ```
 
-Instale as dependências na raiz do projeto
+Caso você prefira executar o banco de dados via docker rode o seguinte comando:
+
 ```bash
-  npm run dev:prestart
+  docker-compose up -d
 ```
 Dentro da pasta de backend, crie um .env com suas informações, o app não irá funcionar sem ele. (Exemplo): 
 ```bash
@@ -77,7 +78,12 @@ MYSQL_DB_NAME=delivery-app
 EVAL_ALWAYS_RESTORE_DEV_DB=true
 ```
 
-Inicie o servidor
+Instale as dependências na raiz do projeto automaticamente!
+```bash
+  npm run start
+```
+
+Se prefereir inicie diretamente pelas pastas. 
 
 ```bash
   cd back-end
@@ -91,7 +97,6 @@ Inicie o servidor
 ```
 
 Pronto! Agora você ja pode acessar o projeto pelo seu navegador
-
 
 
 ## Demonstração
